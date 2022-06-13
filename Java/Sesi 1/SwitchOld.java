@@ -21,6 +21,9 @@ class SwitchOld {
             result = "TTS";
             break;
         }
+        default: {
+            result = "No day";
+        }
     };
     System.out.format("Old switch results: %s", result);
   }
