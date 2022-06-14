@@ -1,10 +1,11 @@
 import java.io.*;
 import java.util.*;
 
-class JavaFormatter {
+class Session01AllLesson {
     public static void main(String[] args) {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int jk;
+        double tot = 0, rata = 0;
         HashMap<String, Integer> hm = new HashMap<String, Integer>();
         try {
             System.out.print("Masukan jumlah kandidat: ");
@@ -24,8 +25,13 @@ class JavaFormatter {
             List<Integer> umurkan = new LinkedList<>(hm.values());
             System.out.println("Data nama kandidat: " + namakan);
             System.out.println("Data umur kandidat: " + umurkan);
-        } catch (IOException eox) {
-            System.out.println(eox);
+            for (int i = 0; i < umurkan.size(); i++){
+                tot += umurkan.get(i);
+                rata = tot / umurkan.size();
+            }            
+            System.out.print(tot+" "+rata);
+        } catch (IOException mantan) {
+            System.out.println(mantan);
         }
     }
 }
