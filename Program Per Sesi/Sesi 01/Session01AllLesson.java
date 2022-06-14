@@ -29,7 +29,7 @@ class Session01AllLesson {
                 tot += umurkan.get(i);
                 rata = tot / umurkan.size();
             }            
-            System.out.print(tot+" "+rata);
+            System.out.format("Total umur kandidat adalah %,.2f tahun, sedang rata-rata umurnya adalah %,.2f tahun", tot, rata);
         } catch (IOException mantan) {
             System.out.println(mantan);
         }
