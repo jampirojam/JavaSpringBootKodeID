@@ -6,7 +6,7 @@ class SwitchNew { //Class Name
     public static void main(String args[]) { // Main Method
 
         // I/O and other code type
-        String day, result = "";
+        String day, result;
         Scanner input = new Scanner(System.in);
         System.out.print("Input Char: ");
         day = input.nextLine();
@@ -23,4 +23,3 @@ class SwitchNew { //Class Name
         System.out.format("New switch results: %s", result);
     }
 }
-
