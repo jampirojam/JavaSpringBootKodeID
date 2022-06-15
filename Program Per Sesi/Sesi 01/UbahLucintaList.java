@@ -11,12 +11,14 @@ public class UbahLucintaList {
         ll.add("Nanas");
         ll.add("Sirsak");
         ll.add("Durian");
-        System.out.println("Daftar buah kesukaan Lucinta: "+ll);
+        System.out.println("Daftar buah kesukaan Lucinta: " + ll);
+
         ll.addFirst("Ceri");
-        ll.addLast("Belimbing");        
-        System.out.println("Daftar buah kesukaan Lucinta: "+ll);
+        ll.addLast("Belimbing");
+        System.out.println("Daftar buah kesukaan Lucinta: " + ll);
+
         ll.set(2, "Manggis");
         ll.set(4, "Kudu");
-        System.out.println("Daftar buah kesukaan Lucinta: "+ll);
+        System.out.println("Daftar buah kesukaan Lucinta: " + ll);
     }
 }
