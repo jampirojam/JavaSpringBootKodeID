@@ -11,6 +11,6 @@ public class LucintaList {
         ll.add("Nanas");
         ll.add("Sirsak");
         ll.add("Durian");
-        System.out.print("Daftar buah kesukaan Lucinta: "+ll);
+        System.out.print("Daftar buah kesukaan Lucinta: " + ll);
     }
 }
