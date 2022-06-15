@@ -5,9 +5,10 @@ import java.util.Scanner;
 class SwitchOld {
   public static void main(String[] args) {
     String day, result = "";
-    Scanner input = new Scanner(System.in);
-    System.out.print("Input Char: ");
-    day = input.nextLine();
+    try (Scanner input = new Scanner(System.in)) {
+      System.out.print("Input Char: ");
+      day = input.nextLine();
+    }
     switch (day){
         case "M":
         case "W":

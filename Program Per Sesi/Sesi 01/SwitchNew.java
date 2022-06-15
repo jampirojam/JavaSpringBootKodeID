@@ -7,9 +7,10 @@ class SwitchNew { //Class Name
 
         // I/O and other code type
         String day, result;
-        Scanner input = new Scanner(System.in);
-        System.out.print("Input Char: ");
-        day = input.nextLine();
+        try (Scanner input = new Scanner(System.in)) {
+            System.out.print("Input Char: ");
+            day = input.nextLine();
+        }
         switch (day) {
             case "M", "W", "F" -> result = "MWF";
             case "T", "TH", "S" -> result = "TTS";
