@@ -9,6 +9,17 @@ Link GitHub:
 
 PANDUAN PENGGUNAAN APLIKASI
 
+======================================================
+CARA RUNNING APP
+________________
+Cara 1
+- Buka terminal, masuk ke direktori.
+- ketik javac NamaFile.java && java NamaFile
+
+Cara 2
+- Langsung run melalui IDE atau code editor
+=======================================================
+
 Latihan_1
 
 - input r

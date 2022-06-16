@@ -7,3 +7,6 @@ Laporan ini berisikan hasil pembelajaran secara keseluruhan yang akan diperbarui
 
 ## Program Per Sesi
 Direktori ini berisikan kumpulan direktori yang memuat program yang telah dikerjakan.
+
+## Tugas
+Direktori yang berisikan kumpulan tugas yang ada pada sesi-sesi yang mempunyai tugas
