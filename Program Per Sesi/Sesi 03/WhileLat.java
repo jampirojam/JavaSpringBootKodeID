@@ -19,7 +19,6 @@ public class WhileLat {
                 i++;
             }
             System.out.format("Perulangan dilakukan sebanyak %d", i);
-            ;
         } catch (Exception e) {
             System.out.println(e);
         }
