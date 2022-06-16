@@ -20,6 +20,7 @@ public class Latihan_5 {
             System.out.format("Nilai X2 = ( %d + 4 ) * %d\n", y1, y2);
             System.out.format("Nilai X2 = %d\n", X2 = (y1 % 4) * y2);
 
+            // Soal Lanjutan
             if (X1 == X2)
                 System.out.println(true);
             if (X2 == X1)
