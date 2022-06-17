@@ -1,9 +1,12 @@
 package Driver;
 
-public class Main {
-    public static void main(String[] args) {
-        Anak anak = new Anak();
-        Aktivitas akt = new Aktivitas();
-        OrangDewasa od = new OrangDewasa();
+class Main {
+    public static void main(String args[]) {
+        AnakUmur1Tahun a1 = new AnakUmur1Tahun();
+
+        a1.mobil();
+        a1.motor();
+        a1.namaAyahKu();
+        System.out.println();
     }
 }
