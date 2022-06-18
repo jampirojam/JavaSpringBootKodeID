@@ -9,7 +9,8 @@ public class ThreadHelloTest {
 
     @Test
     public void testRun() {
-        for (int i = 0; i < 5; i++) {
+        System.out.println("---------------");
+        for (int i = 0; i < 10; i++) {
             ThreadHello instance = new ThreadHello(String.valueOf(i));
             Thread t = new Thread();
             t.start();
