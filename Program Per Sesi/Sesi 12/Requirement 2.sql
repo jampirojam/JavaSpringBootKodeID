@@ -1,4 +1,4 @@
-SELECT dependent_name, relationship FROM dependent JOIN employee ON employee.fname = dependent.dependent_name WHERE fname LIKE 'r%';
+SELECT d.dependent_name, d.relationship, fname FROM dependent d JOIN employee e ON e.ssn = d.essn WHERE e.fname LIKE 'y%' OR e.fname LIKE 'Y%';
 
 SELECT e.fname, w.pnum AS "TOTAL PROJECT" FROM works_on w JOIN employee e ON e.ssn = w.essn WHERE w.pnum = 1;
 
