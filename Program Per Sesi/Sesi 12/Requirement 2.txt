@@ -33,7 +33,7 @@ SELECT SUM(w.hours) AS "TOTAL KERJA", e.fname AS "NAMA" FROM works_on w JOIN emp
 
 9.
 
-Kelompokkan bonus employee berdasarkan jumlah jam kerjanya ? (Jika >= 200 hours, maka bonus = 50%; Jika >= 150 hours, maka bonus = 25%, Selainnya bonus = 10%) 
+SELECT e.fname, CASE WHEN SUM(w.hours) >= 200 THEN '50%' WHEN SUM(w.hours) >= 150 THEN '20%' ELSE '10%' END BONUS FROM works_on w JOIN employee e ON w.essn = e.ssn GROUP BY w.essn, e.fname;
 
 10.
 
