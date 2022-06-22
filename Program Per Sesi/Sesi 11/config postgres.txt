@@ -1,5 +1,5 @@
 # SERVER CONFIG
-server.port=5432
+server.port=8080
 
 #MySQL Connection
 spring.datasource.url=jdbc:postgresql://localhost:5432/company?zeroDateTimeBehavior=convertToNull
