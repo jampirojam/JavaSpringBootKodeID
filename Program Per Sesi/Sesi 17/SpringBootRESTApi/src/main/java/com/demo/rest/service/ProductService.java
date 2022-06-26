@@ -6,7 +6,9 @@ import java.util.List;
 import com.demo.rest.entity.Product;
 
 public interface ProductService {
-	List<Product> findAllProducts();
+	List<Product> findAllProducts();	
+
+	List<Product> getAllProducts();
 
 	List<Product> findAllProductsByName(String name);
 	

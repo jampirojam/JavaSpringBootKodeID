@@ -1,6 +1,7 @@
 package com.demo.rest.service.impl;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -19,6 +20,11 @@ public class ProductServiceImpl implements ProductService {
 	public List<Product> findAllProducts() {
 		return productsRepository.findAll();
 	}
+	
+    @Override
+    public List <Product> getAllProducts() {
+        return productsRepository.findAll();
+    }
 
 	@Override
 	public List<Product> findAllProductsByName(String name) {
@@ -27,8 +33,16 @@ public class ProductServiceImpl implements ProductService {
 
 	@Override
 	public Product findProductById(Long id) {
-		return productsRepository.findProductsById(id);
+		Optional <Product> optional = productsRepository.findById(id);
+        Product product = null;
+        if (optional.isPresent()) {
+            product = optional.get();
+        } else {
+            throw new RuntimeException("Product not found for id :: " + id);
+        }
+        return product;
 	}
+	
 
 	@Override
 	public Product saveProduct(Product product) {
